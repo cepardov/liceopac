@@ -1,0 +1,53 @@
+@import 'materialize.css';
+/* Change background color and font family */
+/*
+body {
+    background: #f8fafa;
+    font-family: Arial,Verdana,sans-serif;
+}
+*/
+
+.login{
+    background: #fff;
+}
+/* Add a few changes to the color and style of form itself */
+.login label {
+    color: #454545;
+    display: block;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.login form .input {
+    height: auto;
+    font-size: medium;
+    font-weight: normal;
+}
+
+.login #backtoblog a, .login #nav a {
+    color: #4da28f;
+}
+
+.wp-core-ui .button-primary {
+    background: #4da28f;
+}
+/*
+body.login {}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {}
+body.login div#login form#loginform {}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {}
+body.login div#login form#loginform input#user_pass {}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {}
+body.login div#login p#nav {}
+body.login div#login p#nav a {}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a {
+*/

@@ -1,0 +1,473 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+.middle {
+    vertical-align: super;
+}
+
+.logo-text {
+    line-height: normal;
+    text-shadow: 1px 1px 2px #000000;
+}
+.logo-container {
+    width: 70px;
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 170%;
+    font-weight: bold;
+}
+.logo {
+    vertical-align: top;
+    position: relative;
+    margin: 0 auto;
+    width: 120px;
+    text-align: center;
+    -webkit-filter: drop-shadow(0px 0px 10px #000);
+    filter: drop-shadow(0px 0px 10px #000);
+}
+.description{
+    line-height: normal;
+    vertical-align: top;
+    text-align: center;
+
+}
+.banner-page{
+    padding-top: 2em;
+    width: 100%;
+}
+.content p img {
+    border: 1px solid red;
+}
+.wp-post-img {
+    height: 185px;
+    overflow: hidden;
+}
+.wp-post-img img {
+    width: 100%;
+    height: 100%;
+}
+.nav-separate {
+    padding-top: 2em;
+}
+.post img {
+    float: left;
+    border-radius: 10px ;
+    margin-right: 1em;
+}
+.post p {
+    text-align: justify;
+}
+.text-shadows-2px {
+    text-shadow: 1px 1px 2px #000;
+}
+.text-shadows-3px {
+    text-shadow: 1px 1px 3px #000;
+}
+.text-shadows-4px {
+    font-weight: 700;
+    border: 1px solid red;
+    text-shadow: 0px 0px 10px #ff0600;
+}
+.text-justify {
+    text-align: justify;
+}
+
+.page-numbers {
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    color: #607d8b;
+}
+
+a.page-numbers:hover {
+    font-size: 1.5rem;
+    color: #fff;
+    color: #fff;
+    background-color: #607d8b;
+    padding: 3px;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+}
+
+.current {
+    color: #fff;
+    background-color: #607d8b;
+    padding: 3px;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+}
+
+.post p img {
+    float: left;
+    padding: 5px;
+    height: 200px;
+}
+
+.parallax-container {
+    height: 250px;
+}
+
+.stat-icon, .stat-number, .stat-1, .stat-2 {
+    line-height: 90%;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .wp-post-img img {
+        overflow: hidden;
+        width: 100%;
+        height: 90%;
+    }
+}
+#nprogress {
+    pointer-events: none;
+}
+
+#nprogress .bar {
+    background: #29d;
+
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+}
+/* Fancy blur effect */
+#nprogress .peg {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+    opacity: 1.0;
+
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+    display: block;
+    position: fixed;
+    z-index: 1031;
+    top: 15px;
+    right: 15px;
+}
+
+#nprogress .spinner-icon {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+
+    border: solid 2px transparent;
+    border-top-color: #73bcdd;
+    border-left-color: #7bb4dd;
+    border-radius: 50%;
+
+    -webkit-animation: nprogress-spinner 400ms linear infinite;
+    animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+    overflow: hidden;
+    position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+    position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+    0%   { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes nprogress-spinner {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.postimg {
+    padding: 1%;
+}
+
+.space {
+    margin-bottom: 15px;
+}
+
+.space a img {
+    -webkit-filter: drop-shadow(0px 0px 5px #000);
+    filter: drop-shadow(0px 0px 5px #000);
+}
+
+.space:hover a img {
+    -webkit-filter: drop-shadow(0px 0px 5px #202773);
+    filter: drop-shadow(0px 0px 5px #202773);
+}
+
+.size-post-thumbnail {
+    padding: 1.2rem;
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.size-post-thumbnail p {
+    text-align: justify;
+}
+
+.news {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background-color: gray;
+}
+
+.news img {
+    width: 100%;
+    max-width: 100%;
+    top: -50%;
+
+    -moz-transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.news:hover img {
+    width: 100%;
+    max-width: 100%;
+    top: -50%;
+    -moz-transform: scale(1.7);
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
+}
+
+.news span {
+    position: absolute;
+    top: 59%;
+    left:0;
+    color: white;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 5px;
+    padding-right: 3px;
+    vertical-align: middle;
+
+    font-size: 1.2rem;
+
+    text-shadow: 1px 1px 4px #000000;
+
+    background: gray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(bottom,rgba(255,0,0,0), rgb(0, 0, 0)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(bottom,rgba(255,0,0,0), rgb(0, 0, 0)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(bottom,rgba(255,0,0,0), rgb(0, 0, 0)); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0)); /*Standard*/
+}
+
+#html5-watermark {
+    display: none;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-thumb {
+    background: #a5a5a5;
+    border: 2px solid #f5f5f5;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #9b9b9b;
+    border: none;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #858585;
+    border: none;
+}
+::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border: 0px none #f5f5f5;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #f5f5f5;
+}
+::-webkit-scrollbar-track:active {
+    background: #f5f5f5;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+@media only screen and (max-width: 700px) {
+    .size-post-thumbnail {
+        padding-bottom: 0.5rem;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 100px) {
+    .responsive-text {
+        font-size: 1.45rem;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .responsive-text {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 390px) {
+    .responsive-text {
+        font-size: 1.370rem;
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .responsive-text {
+        font-size: 1.340rem;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .responsive-text {
+        font-size: 1.310rem;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .responsive-text {
+        font-size: 1.28rem;
+    }
+}
+
+@media only screen and (min-width: 510px) {
+    .responsive-text {
+        font-size: 1.26rem;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    .responsive-text {
+        font-size: 1.24rem;
+    }
+}
+
+@media only screen and (min-width: 570px) {
+    .responsive-text {
+        font-size: 1.22rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .responsive-text {
+        font-size: 1.20rem;
+    }
+}
+
+@media only screen and (min-width: 630px) {
+    .responsive-text {
+        font-size: 1.18rem;
+    }
+}
+
+@media only screen and (min-width: 660px) {
+    .responsive-text {
+        font-size: 1.16rem;
+    }
+}
+
+@media only screen and (min-width: 690px) {
+    .responsive-text {
+        font-size: 1.14rem;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .responsive-text {
+        font-size: 1.12rem;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .responsive-text {
+        font-size: 1.10rem;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    .responsive-text {
+        font-size: 1.08rem;
+    }
+}
+
+@media only screen and (min-width: 810px) {
+    .responsive-text {
+        font-size: 1.06rem;
+    }
+}
+
+@media only screen and (min-width: 840px) {
+    .responsive-text {
+        font-size: 1.04rem;
+    }
+}
+
+@media only screen and (min-width: 870px) {
+    .responsive-text {
+        font-size: 1.02rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .responsive-text {
+        font-size: 1.01rem;
+    }
+}
+
+@media only screen and (min-width: 930px) {
+    .responsive-text {
+        font-size: 1.0rem;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .responsive-text {
+        font-size: 1.0rem;
+    }
+}
+
+@media only screen and (max-width: 100px) {
+    .responsive-text {
+        font-size: 1.0rem;
+    }
+}
